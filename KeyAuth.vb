@@ -201,7 +201,7 @@ Namespace KeyAuth
                 Using client As WebClient = New WebClient()
                     client.Headers("User-Agent") = "KeyAuth"
                     ' ServicePointManager.ServerCertificateValidationCallback = AddressOf others.pin_public_key
-                    Dim raw_response = client.UploadValues("https://keyauth.win/api/1.0/", post_data)
+                    Dim raw_response = client.UploadValues("https://www.egobot.tk/api/1.0/", post_data)
                     ' ServicePointManager.ServerCertificateValidationCallback = Function(send, certificate, chain, sslPolicyErrors) True
                     Return Encoding.Default.GetString(raw_response)
                 End Using
